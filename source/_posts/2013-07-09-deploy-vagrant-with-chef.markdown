@@ -6,6 +6,10 @@ comments: true
 categories:
 ---
 
+## Prerequisite
+
+Below flow is referenced from http://leopard.in.ua/2013/01/04/chef-solo-getting-started-part-1/, who has provided an excellent tutorial for newcomers. 
+
 ## Setup the kitchen with knife-solo
 
 Let's create a directory for our kitchen,
