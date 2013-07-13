@@ -8,7 +8,9 @@ categories:
 
 ## Prerequisite
 
-Below flow is referenced from http://leopard.in.ua/2013/01/04/chef-solo-getting-started-part-1/, who has provided an excellent tutorial for newcomers. 
+Below content is referenced from http://leopard.in.ua/2013/01/04/chef-solo-getting-started-part-1/, who has provided an excellent tutorial for chef-solo.
+
+My example code is [here](https://github.com/Josephu/chef-solo-example/tree/1.0).
 
 ## Setup the kitchen with knife-solo
 
@@ -20,7 +22,7 @@ $ cd chef-solo
 ... and setup knife-solo and berkshelf with bundler.
 
 ```
-$ vim Gemfile 
+$ vim Gemfile
 	source :rubygems
 
 	gem 'knife-solo'
@@ -72,7 +74,7 @@ $ vagrant box add berk-precise32 http://files.vagrantup.com/precise32.box
 
 $ cat Vagrantfile
 
-	## Configure box 
+	## Configure box
 
 	  # Every Vagrant virtual environment requires a box to build off of.
 		config.vm.box = "berk-precise32"
@@ -106,8 +108,7 @@ $ vagrant plugin install vagrant-berkshelf
 
 Finally, we need to setup chef in Vagrantfile. Note that every time we run *vagrant provision*, this code will run again.
 
-Lets say we want to have rvm with ruby 1.9.3, nginx compiled in source, git and mysql. 
-
+Lets say we want to have rvm with ruby 1.9.3, nginx compiled in source, git and mysql.
 
 ```
 

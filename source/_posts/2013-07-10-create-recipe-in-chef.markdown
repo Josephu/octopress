@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "Create Recipe in Chef"
+title: "Create Recipe in Chef Solo"
 date: 2013-07-10 14:43
 comments: true
-categories: 
+categories:
 ---
 
 ## Prerequisite
 
-Below flow is referenced from http://leopard.in.ua/2013/01/05/chef-solo-getting-started-part-2/, who has provided an excellent tutorial for newcomers. 
+Below content is referenced from http://leopard.in.ua/2013/01/05/chef-solo-getting-started-part-2/, who has provided an excellent tutorial for chef-solo.
+
+My example code is [here](https://github.com/Josephu/chef-solo-example/tree/2.0).
 
 ## Create a cookbook
 
@@ -18,7 +20,7 @@ Prepare a cookbook structure in site-cookbooks. Note that site-cookbooks are for
 $ cd site-cookbooks
 $ mkdir tatoo
 $ cd tatoo
-$ mkdir recipes; 
+$ mkdir recipes;
 $ mkdir files; mkdir files/default
 $ mkdir templates; mkdir templates/default
 $ cat default.rb
