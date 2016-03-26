@@ -61,12 +61,6 @@ template "#{node.nginx.source.prefix}/conf/sites-available/#{node.app.name}.conf
   mode "0644"
 end
 
-bash "create sites-enable link" do
-	code <<-EOH
-		ln -s #{node.nginx.source.prefix}/conf/sites-available/#{node.app.name}.conf #{node.nginx.source.prefix}/conf/sites-enabled/#{node.app.name}.conf
-	EOH
-end
-
 nginx_site "#{node.app.name}.conf"
 
 cookbook_file "#{node.app.web_dir}/public/index.html" do
